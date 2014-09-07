@@ -27,6 +27,6 @@ ActiveRecord::Schema.define(version: 20140830083024) do
     t.datetime "updated_at"
   end
 
-  add_index "tasks", ["project_id"], name: "index_tasks_on_project_id"
+  add_index "tasks", ["project_id"], name: "index_tasks_on_project_id", using: :btree
 
 end
